@@ -118,7 +118,7 @@ curl https://yourdomain/mcp/.well-known/oauth-protected-resource
 
 ## 6. Proxying and IP Restriction: Use RewriteCond
 
-Consider a subdomain of yourapp.company.com and an internal Phusion Passenger app on 127.0.0.1:8000. You can use the .htaccess details below to create a reverse proxy to your server for only Anthropic's IPs while not blocking letsencrypt requests:
+Consider a subdomain of yourapp.company.com and an internal Phusion Passenger app on 127.0.0.1:8000. You can use the .htaccess details below in the subdomain target folder (not the Passenger app folder) to create a reverse proxy to your server for only Anthropic's IPs while not blocking letsencrypt requests:
 
 ```apache
 RewriteEngine On
