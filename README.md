@@ -16,7 +16,7 @@ server with Microsoft Entra ID SSO, deployed on cPanel/Passenger, consumed by Cl
 FastMCP's `AzureProvider` validates tokens against the v2 JWKS endpoint
 (`https://login.microsoftonline.com/{tenant}/v2.0/keys`). v1 and v2 tokens differ
 in audience format and claim structure — v1 uses a legacy resource URI as the audience;
-v2 uses the Application ID URI (`api://dandh-catalog`).
+v2 uses the Application ID URI (`api://app-action`).
 
 The fix is a one-line change to the **App Manifest**:
 
